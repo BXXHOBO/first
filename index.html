@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<style type="text/css">
+			.navbar{
+				margin-bottom: 0;
+				background-color: #f4511e;
+				font-size: 12px !important;
+				border: 0;
+			}
+			/**/
+			.navbar li a,.navbar .navbar-brand{
+				color: #FFFFFF !important;
+			}
+			/*设置a标签移进移出的效果*/
+			.navbar-nav li a:hover,.navbar-nav li .active a{
+				color: #fc511e !important;
+				background-color: #fff !important;
+			}
+			.jumbotron{
+				background-color: #F4511E;
+				color: #FFFFFF;
+				padding: 100px 25px;
+				text-align: center;
+			}
+			.about{
+				padding: 50px 100px;
+			}
+			.logo{
+				color: #F4511E;
+				font-size: 200px;
+			}
+			#value{
+				text-align: center;				
+			}
+			.value{				
+				padding: 60px 0;
+			}
+			.valuelogo{
+				color: #F4511E;
+				font-size: 150px;							
+			}
+			.logo-small{
+				color: #F4511E;
+				font-size: 40px;	
+			}
+			body{
+				font: 400 15px Lato, sans-serif;
+				line-height: 1.8;
+				color: #818181;
+			}
+			.container-fluid{
+				padding: 60px 50px;
+			}
+			.thumbnail{
+				padding: 0;
+				border: none;
+				border-bottom:0 ;
+			}
+			.thumbnail img{
+				width: 100%;
+				height: 100%;
+				margin-bottom: 10px;
+			}
+			.carousel-inner{
+				width: 100%;
+			}
+			
+			.carousel-control.right,.carousel-control.left{
+				background-image: none;
+				color: #F4511E;
+			}
+			.carousel-indicators li{
+				background-color: #F4511E;
+			}
+			.carousel-indicators li .active{
+				background-color: #F4511E;
+			}
+			.item h3{
+				font-size: 19px;
+				line-height: 1.375em;
+				font-weight: 400;
+				font-style: italic;
+				margin: 60px 0;
+			}
+			.item span{
+				font-style: normal;
+			}
+			.panel{
+				border: 1px solid #F4511E;
+				border-radius: 0;
+				transition: box-shadow 0.5s;				
+			}
+			/*当鼠标移进面板时给面板添加阴影效果*/
+			.panel:hover{
+				box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+			}
+			/*当鼠标移进按钮时，给按钮改变背景*/
+			.panel-footer .btn:hover{
+				border: 1px solid#F4511E;
+				background-color: #fff !important;
+				color: #F4511E;
+			}
+			.panel-heading{
+				color: #fff !important;
+				background-color: #F4511E !important;
+				padding: 25px;
+				border-bottom: 1px solid transparent;
+				border-top-left-radius:0px;
+				border-top-right-radius: 0px;
+				border-bottom-left-radius:0px;
+				border-bottom-right-radius: 0px;
+			}
+			.panel-footer .btn{
+				margin: 15px 0;
+				background-color: #F4511E;
+				color: #fff;
+			}
+			.panel-footer{
+				background-color: #FCF8E3 !important;
+			}
+			footer .a1{
+				color: #F4511E;
+				font-size: 20px;
+			}
+			footer a:hover, footer a:focus{
+				
+			}
+		</style>
+	</head>
+	<body id="myPage" data-spy="scroll" data-target="#myNavbar">
+		<!--导航栏-->
+		<nav id="myNavbar" class="navbar navbar-default navbar-fixed-top" data-offset="60">
+			<div class="container">
+				<!--头部放置网站的标记，或者是logo-->
+				<div class="navbar-header">
+					<!--折叠按钮-->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myCollapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Logo</a>				
+				</div>
+				<div class="colapse navbar-collapse " id="myCollapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="#abut">ABOUT</a></li>
+						<!--<li><a href="#value">ABOUT</a></li>-->
+						<li><a href="#value">Our value</a></li>
+						<li><a href="#services">SERVICES</a></li>
+						<li><a href="#Prrfolio">PORRFOLIO</a></li>
+						<li><a href="#customers">CUSTOMERS</a></li>
+						<li><a href="#contact">CONTACT</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!--巨幕-->
+		<div class="jumbotron">
+			<h1>Company</h1>
+			<p>We specialize in blablabla</p>
+			<form class="form-inline">
+				<input type="email" class="form-control" size="50" placeholder="Email Address" />
+				<button type="button" class="btn btn-info">Subscrbe</button>
+			</form>
+		</div>
+		<!--关于-->
+		<div id="abut">
+			<div class="row">
+				<div class="col-md-8 about">
+					<h2>About Compant Page</h2>
+					<h4>Lorem ipsum...</h4>
+					<button class="btn btn-default btn-lg">In Touch</button>
+				</div>
+				<div class="col-md-4">
+					<span class="glyphicon glyphicon-signal logo"></span>
+				</div>
+			</div>
+		</div>
+		<!--体现价值-->
+		<div id="value">
+			<div class="row">
+				<div class="col-md-4 abou ">
+					<span class="glyphicon glyphicon-globe valuelogo"></span>
+				</div>
+				<div class="col-md-8 value">
+					<h2> Our Values</h2>
+					<h4>Lorem ipsum dolor sit amet...</h4>
+				</div>
+			</div>
+		</div>
+		<!--服务-->
+		<div id="services" class="container-fluid text-center">
+			<h2>SERVICES</h2>
+			<h4>Whar we offer</h4>
+			<br />
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="glyphicon glyphicon-off logo-small"></div>
+					<h4>POWER</h4>
+					<p>Lorem ipsum</p>
+				</div>
+				<div class="col-sm-4">
+					<div class="glyphicon glyphicon-heart logo-small"></div>
+					<h4>LOVE</h4>
+					<p>Lorem ipsum</p>
+				</div>
+				<div class="col-sm-4">
+					<div class="glyphicon glyphicon-lock logo-small"></div>
+					<h4>JOB DONE</h4>
+					<p>Lorem ipsum</p>
+				</div>
+			</div>
+			<br />
+			<br />
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="glyphicon glyphicon-leaf logo-small"></div>
+					<h4>GREEN</h4>
+					<p>Lorem ipsum</p>
+				</div>
+				<div class="col-sm-4">
+					<div class="glyphicon glyphicon-certificate logo-small"></div>
+					<h4>CERTIFED</h4>
+					<p>Lorem ipsum</p>
+				</div>
+				<div class="col-sm-4">
+					<div class="glyphicon glyphicon-wrench logo-small"></div>
+					<h4>HARD WORK</h4>
+					<p>Lorem ipsum</p>
+				</div>
+			</div>
+		</div>
+		<!--成就荣誉-->
+		<div id="Prrfolio" class="container-fluid text-center">
+			<h2>Portfolio</h2>
+			<h4>What we have created</h4>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="thumbnail">
+						<img src="img/img01.jpg" />
+						<p><strong>Paris</strong></p>
+						<p>Yes,we built Paris</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="thumbnail">
+						<img src="img/img02.jpg" />
+						<p><strong>Paris</strong></p>
+						<p>Yes,we built Paris</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="thumbnail">
+						<img src="img/img03.jpg" />
+						<p><strong>Paris</strong></p>
+						<p>Yes,we built Paris</p>
+					</div>
+				</div>
+			</div>
+			<!--消费方式-->
+			<h2>What our customers say</h2>
+			<div id="customers" class="container-fluid text-center">
+				
+				<!--最外面的div容器需要添加carousel轮播类，需要有过渡效果就需要添加slide-->
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+					<!--轮播结构计数器，data-slide-to从0开始，代表第一张图片，data-target="#myCarousel"绑定父容器的id-->
+					<ul class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1" ></li>
+						<li data-target="#myCarousel" data-slide-to="2" ></li>
+					</ul>
+					<!--图片部分，需要放在一个含有carousel-inner中，轮播的每一项都需要添加item-->
+					<div class="carousel-inner">
+						<div class="item active">
+							<h3><i>"This company is the best. I am so happy with the result"</i></h3>
+							<h3>Chandler Bing</h3>						
+						</div>
+						<div class="item">
+							<h3><i>"This company is the best. I am so happy with the result"</i></h3>
+							<h3>Chandler Bing</h3>	
+						</div>
+						<div class="item">
+							<h3><i>"This company is the best. I am so happy with the result"</i></h3>
+							<h3>Chandler Bing</h3>	
+						</div>
+					</div>
+					<!--控制器,按需求，可要可不要，他是控制左右轮播图显示， data-slide="prev"，前一张，data-slide="next" 下一张 
+						<span class="glyphicon glyphicon-chevron-left"></span>显示图标
+					-->
+					<a class="carousel-control left" href="#myCarousel" data-slide="prev" >
+						<span class="glyphicon glyphicon-chevron-left"></span>
+					</a>
+					<a class="carousel-control right" href="#myCarousel" data-slide="next" >
+						<span class="glyphicon glyphicon-chevron-right"></span>
+					</a>
+				</div>
+			</div>
+		</div>		
+		<!--价格-->
+		<div id="pricing" class="container-fluid text-center">
+			<h2>Pricing</h2>
+			<h4>Chose a payment plan that</h4>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="panel">
+						<div class="panel-heading">
+							<h1B>Basic</h1>
+						</div>
+						<div class="panel-body">
+							<p><strong>20</strong>Lorem</p>
+							<p><strong>15</strong>lpasum</p>
+							<p><strong>5</strong>Dolor</p>
+							<p><strong>2</strong>Sit</p>
+							<p><strong>Endless</strong>Amet</p>
+						</div>
+						<div class="panel-footer">
+							<h3>$19</h3>
+							<h4>per month</h4>
+							<button class="btn btn-lg">Sign Up</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="panel">
+						<div class="panel-heading">
+							<h1B>Basic</h1>
+						</div>
+						<div class="panel-body">
+							<p><strong>20</strong>Lorem</p>
+							<p><strong>15</strong>lpasum</p>
+							<p><strong>5</strong>Dolor</p>
+							<p><strong>2</strong>Sit</p>
+							<p><strong>Endless</strong>Amet</p>
+						</div>
+						<div class="panel-footer">
+							<h3>$29</h3>
+							<h4>per month</h4>
+							<button class="btn btn-lg">Sign Up</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="panel">
+						<div class="panel-heading">
+							<h1B>Basic</h1>
+						</div>
+						<div class="panel-body">
+							<p><strong>20</strong>Lorem</p>
+							<p><strong>15</strong>lpasum</p>
+							<p><strong>5</strong>Dolor</p>
+							<p><strong>2</strong>Sit</p>
+							<p><strong>Endless</strong>Amet</p>
+						</div>
+						<div class="panel-footer">
+							<h3>$49</h3>
+							<h4>per month</h4>
+							<button class="btn btn-lg">Sign Up</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--联系我们-->
+		<div id="contact" class="container-fluid ">
+			<h2 class="text-center">CONTACT</h2>
+			<div class="row">
+				<div class="col-sm-5">
+					<p>Contact us</p>
+					<p><span class="glyphicon glyphicon-map-marker"></span>Chicago,US</p>
+					<p><span class="glyphicon glyphicon-phone"></span>+00 15151515</p>
+					<p><span class="glyphicon glyphicon-envelope"></span>myemail@somethig.com</p>
+				</div>
+				<div class="col-sm-7">
+					<div class="row">
+						<div class="col-sm-6 form-group">
+							<input class="form-control" id="name" placeholder="Name" type="text" required />
+						</div>
+						<div class="col-sm-6 form-group">
+							<input class="form-control" id="emails" placeholder="emails" type="email" required />
+						</div>						
+					</div>
+					<textarea class="form-control" id="comments" name="comments" placeholder="comments" rows="5"></textarea>
+					<br />		
+					<div class="row">
+						<div class="col-sm-12 form-group">
+							<button type="submit" class="btn btn-default pull-right">send</button>
+						</div>
+					</div>
+						
+				</div>
+			</div>
+		</div>
+		<!--脚部，回到顶部-->
+		<footer class="container-fluid text-center">
+			<a href="#" title="To Top" class="a1">
+				<span class="glyphicon glyphicon-chevron-up"></span>
+			</a>
+			<p>Bootstrap Theme Made By <a>www.bootcss.com</a></p>
+		</footer>
+	</body>
+</html>
